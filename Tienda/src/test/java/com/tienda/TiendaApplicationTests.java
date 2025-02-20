@@ -1,10 +1,10 @@
-package com.semanacuatro.actividadsemanacuatro;
+package com.tienda;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ActividadsemanacuatroApplicationTests {
+class TiendaApplicationTests {
 
 	@Test
 	void contextLoads() {

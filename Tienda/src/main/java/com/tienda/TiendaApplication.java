@@ -1,13 +1,13 @@
-package com.semanacuatro.actividadsemanacuatro;
+package com.tienda;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ActividadsemanacuatroApplication {
+public class TiendaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ActividadsemanacuatroApplication.class, args);
+		SpringApplication.run(TiendaApplication.class, args);
 	}
 
 }
