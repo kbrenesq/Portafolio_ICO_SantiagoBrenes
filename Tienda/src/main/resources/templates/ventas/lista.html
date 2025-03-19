@@ -5,11 +5,14 @@
         <title>TechShop</title>
     </head>
     <body>
+
         <header th:replace="~{layout/plantilla :: header}"/>
 
-        <section th:replace="~{ventas/fragmentos :: listadoVentas}"/>
+        <main class="container">
+            <section th:replace="~{ventas/fragmentos :: filtros}"/>
+            <section th:replace="~{ventas/fragmentos :: listadoVentas}"/>
 
-        <footer th:replace="~{layout/plantilla :: footer}"/>      
-
+            <footer th:replace="~{layout/plantilla :: footer}"/>      
+        </main>
     </body>
 </html>

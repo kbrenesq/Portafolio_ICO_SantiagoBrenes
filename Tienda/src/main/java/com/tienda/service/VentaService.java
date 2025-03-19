@@ -13,4 +13,8 @@ import java.util.List;
  */
 public interface VentaService {
     public List<Venta> getVentas();
+    
+    
+    //Lista de productos utilizando consultas con SQL Nativo
+    public List<Venta> metodoNativo(int cantidadDeseada);
 }

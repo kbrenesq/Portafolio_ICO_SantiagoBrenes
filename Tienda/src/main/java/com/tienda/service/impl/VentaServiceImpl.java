@@ -29,5 +29,11 @@ public class VentaServiceImpl implements VentaService{
         
         return ventas;
     }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Venta> metodoNativo(int cantidadDeseada) {
+        return ventaDAO.metodoNativo(cantidadDeseada);
+    }
     
 }

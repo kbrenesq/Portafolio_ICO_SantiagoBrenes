@@ -32,10 +32,6 @@
                                             <td>[[${venta.cantidad}]]</td>
                                     </tbody>
                                 </table>
-
-                            </div>
-                            <div class="text-center p-2" th:if="${productos == null or productos.empty}">
-                                <span>[[#{lista.vacia}]]</span>
                             </div>
                         </div>
                     </div>
@@ -50,5 +46,30 @@
                 </div>
             </div>
         </section>
+
+        <!-- 3 Sección para crear los filtros -->
+        <section th:fragment="filtros" class="bg-light">
+            <div class="col-md-3">
+                <form method="POST" th:action="@{/ventas/query_cantidad_ventas}" 
+                      class="was-validated">
+                    <div class="card success">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="precioInf">Cantidad de ventas a filtrar</label>
+                                <input type="number" class="form-control" 
+                                       th:value="${cantidadDeseada}"
+                                       th:name="cantidadDeseada" required="true"/>
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-warning">
+                                <i class="fas fa-check">Buscar</i> 
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
+        </section> 
 
     </body>
